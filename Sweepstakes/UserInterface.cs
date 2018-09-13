@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class UserInterface
+    static class UserInterface
     {
-        public void PromptForContestantsFirstName()
+        public static string PromptForContestantsFirstName()
         {
-            Console.WriteLine("Please enter the contestant's First Name:");
-            Console.ReadLine();
+            Console.WriteLine("Please enter contestant's first name:");
+            return Console.ReadLine();
         }
-        public void PromptForContestantsLastName()
+        public static string PromptForContestantsLastName()
         {
             Console.WriteLine("Please enter the contestant's Last Name:");
-            Console.ReadLine();
+            return Console.ReadLine();
         }
-        public void PromptForContestantsEmail()
+        public static string PromptForContestantsEmail()
         {
             Console.WriteLine("Please enter the contestant's E-Mail address:");
-            Console.ReadLine();
+            return Console.ReadLine();
         }
-        public void PromptForContestantsId()
+        public static int PromptForContestantsId()
         {
             Console.WriteLine("Please enter contestant's ID number:");
-            Console.ReadLine();
+            return Convert.ToInt32(Console.ReadLine());
         }
 
     }

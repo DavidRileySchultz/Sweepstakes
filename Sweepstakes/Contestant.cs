@@ -18,6 +18,7 @@ namespace Sweepstakes
             firstName = UserInterface.PromptForContestantsFirstName();
             lastName = UserInterface.PromptForContestantsLastName();
             emailAddress = UserInterface.PromptForContestantsEmail();
+            registrationNumber = UserInterface.PromptForContestantsId();
         }
 
     }
