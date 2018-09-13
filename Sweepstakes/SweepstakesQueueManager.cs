@@ -19,7 +19,7 @@ namespace Sweepstakes
         }
         public Sweepstakes GetSweepstakes()
         {
-            sweepstakesQueue.Dequeue();
+            return sweepstakesQueue.Dequeue();
         }
     }
 }
