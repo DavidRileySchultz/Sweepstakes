@@ -8,6 +8,22 @@ namespace Sweepstakes
 {
     public class Sweepstakes
     {
+        private Dictionary<int, Contestant> registeredContestants;
+        private Random random = new Random();
+        public 
 
+        void RegisterContestant()
+        {
+
+        }
+        void PrintContestantInformation()
+        {
+
+        }
+        string PickWinner()
+        {
+
+        }
+        
     }
 }
