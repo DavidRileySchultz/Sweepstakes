@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class UserInterface
+    public class UserInterface
     {
         public void PromptForContestantsFirstName()
         {
@@ -18,9 +18,9 @@ namespace Sweepstakes
             Console.WriteLine("Please enter the contestant's Last Name:");
             Console.ReadLine();
         }
-        public void PromptForContestsEmail()
+        public void PromptForContestantsEmail()
         {
-            Console.WriteLine("Please ebter the contestant's E-Mail address:");
+            Console.WriteLine("Please enter the contestant's E-Mail address:");
             Console.ReadLine();
         }
         public void PromptForContestantsId()

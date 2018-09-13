@@ -8,25 +8,18 @@ namespace Sweepstakes
 {
     class SweepstakesQueueManager : ISweepstakesManager
     {
-        Queue<Contestant> sweepstakesQueue = new Queue<Contestant>();
-        public int Count
+        Queue<Contestant> sweepstakesQueue;
+        public SweepstakesQueueManager()
         {
-            get
-            {
-                return sweepstakesQueue.Count;
-            }
+            sweepstakesQueue = new Queue<Contestant>();
         }
-        public void AddIntoSweepSstakes(Contestant contestant)
+        public void InsertSweepstakes(Contestant contestant)
         {
             sweepstakesQueue.Enqueue(contestant);
         }
-        public void EndOfSweepstakes()
-        {
-            sweepstakesQueue.Dequeue();//use random generator to scramble to pick last person of list to be winner?
-        }
         public Sweepstakes GetSweepstakes()
         {
-            return sweepstakesQueue.First();
+            sweepstakesQueue.Dequeue();
         }
     }
 }
