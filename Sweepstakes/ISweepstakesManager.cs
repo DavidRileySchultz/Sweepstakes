@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Contestant
+    interface ISweepstakesManager
     {
-        string firstName;
-        string lastName;
-        string emailAddress;
-        int registrationNumber;
-
     }
 }
