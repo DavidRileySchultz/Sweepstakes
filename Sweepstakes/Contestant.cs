@@ -19,7 +19,7 @@ namespace Sweepstakes
             firstName = UserInterface.PromptForContestantsFirstName();
             lastName = UserInterface.PromptForContestantsLastName();
             emailAddress = UserInterface.PromptForContestantsEmail();
-            registrationNumber = rnd.Next(1123144223, 2138409140);
+            registrationNumber = rnd.Next(1000000000, 2000000000);
         }
     }
 }

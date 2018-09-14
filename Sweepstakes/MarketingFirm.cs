@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        public MarketingFirm(ISweepstakesManager manager)
+        public MarketingFirm(ISweepstakesManager)
         {
 
         }

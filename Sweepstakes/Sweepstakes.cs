@@ -18,7 +18,7 @@ namespace Sweepstakes
         }
         public Sweepstakes(string name)
         {
-            this.name = name;
+            this.name = UserInterface.PromptForSweepstakesName();
             registeredContestants = new Dictionary<int, Contestant>();            
         }
         void RegisterContestant(Contestant contestant)

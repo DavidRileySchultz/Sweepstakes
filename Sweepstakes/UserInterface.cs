@@ -23,5 +23,15 @@ namespace Sweepstakes
             Console.WriteLine("Please enter the contestant's E-Mail address:");
             return Console.ReadLine();
         }
+        public static string PromptForSweepstakesName()
+        {
+            Console.WriteLine("Please enter the name of your Sweepstakes:");
+            return Console.ReadLine();
+        }
+        public static int PromptForNumberOfSweepstakes()
+        {
+            Console.WriteLine("How many Sweepstakes would you like to run:");
+            return Convert.ToInt32(Console.ReadLine());
+        }
     }
 }
