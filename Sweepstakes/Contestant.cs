@@ -21,6 +21,5 @@ namespace Sweepstakes
             emailAddress = UserInterface.PromptForContestantsEmail();
             registrationNumber = rnd.Next(1123144223, 2138409140);
         }
-
     }
 }

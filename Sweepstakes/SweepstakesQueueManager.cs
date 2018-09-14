@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class SweepstakesQueueManager : ISweepstakesManager
     {
-        Queue<Sweepstakes> sweepstakesQueue;
+        public Queue<Sweepstakes> sweepstakesQueue;
         public SweepstakesQueueManager()
         {
             sweepstakesQueue = new Queue<Sweepstakes>();
