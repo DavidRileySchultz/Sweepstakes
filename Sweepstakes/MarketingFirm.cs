@@ -8,7 +8,22 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        public MarketingFirm(ISweepstakesManager)
+        public int numberOfSweepstakes;
+        public MarketingFirm(ISweepstakesManager manager)
+        {
+            
+        }
+        private void CreateYourSweepstakes(ISweepstakesManager manager)
+        {
+            numberOfSweepstakes = UserInterface.PromptForNumberOfSweepstakes();
+            for(int i = 0; i < numberOfSweepstakes; i++)
+            {
+                Sweepstakes sweepstakes = new Sweepstakes(UserInterface.PromptForSweepstakesName());
+                sweepstakes = AddNewContestant();
+            }
+
+        }
+        private Sweepstakes AddNewContestant()
         {
 
         }
