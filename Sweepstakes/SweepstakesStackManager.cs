@@ -9,13 +9,6 @@ namespace Sweepstakes
     class SweepstakesStackManager : ISweepstakesManager
     {
         Stack<Sweepstakes> sweepstakesStack;
-        public int Count
-        {
-            get
-            {
-                return sweepstakesStack.Count;
-            }
-        }
         public SweepstakesStackManager()
         {
             sweepstakesStack = new Stack<Sweepstakes>();

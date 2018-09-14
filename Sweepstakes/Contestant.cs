@@ -8,17 +8,18 @@ namespace Sweepstakes
 {
     public class Contestant
     {
-        string firstName;
-        string lastName;
-        string emailAddress;
-        int registrationNumber;
+        public string firstName;
+        public string lastName;
+        public string emailAddress;
+        public int registrationNumber;
+        Random rnd = new Random();
 
         public Contestant()
         {
             firstName = UserInterface.PromptForContestantsFirstName();
             lastName = UserInterface.PromptForContestantsLastName();
             emailAddress = UserInterface.PromptForContestantsEmail();
-            registrationNumber = UserInterface.PromptForContestantsId();
+            registrationNumber = rnd.Next(1123144223, 2138409140);
         }
 
     }

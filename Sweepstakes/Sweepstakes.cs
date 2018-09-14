@@ -9,20 +9,34 @@ namespace Sweepstakes
     public class Sweepstakes
     {
         private Dictionary<int, Contestant> registeredContestants;
-        private Random random = new Random();
-        public 
-
-        void RegisterContestant()
+        public int Count
+        {
+            get
+            {
+                return registeredContestants.Count;
+            }
+        }
+        public Sweepstakes()
+        {
+            registeredContestants = new Dictionary<int, Contestant>();
+        }
+        Sweepstakes(string name)
         {
 
         }
-        void PrintContestantInformation()
+        void RegisterContestant(Contestant contestant)
         {
-
+            registeredContestants.Add(registeredContestants.Count + 1, contestant);
+        }
+        void PrintContestantInformation(Contestant contestant)
+        {
+            Console.WriteLine($"This contestant's name is: {contestant.firstName} {contestant.lastName}");
+            Console.WriteLine($"This contestant's e-mail address is: {contestant.emailAddress}");
+            Console.WriteLine($"This contestant's registration ID is: {contestant.registrationNumber}");
         }
         string PickWinner()
         {
-
+            
         }
         
     }

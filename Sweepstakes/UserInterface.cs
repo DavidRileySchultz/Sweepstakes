@@ -23,11 +23,5 @@ namespace Sweepstakes
             Console.WriteLine("Please enter the contestant's E-Mail address:");
             return Console.ReadLine();
         }
-        public static int PromptForContestantsId()
-        {
-            Console.WriteLine("Please enter contestant's ID number:");
-            return Convert.ToInt32(Console.ReadLine());
-        }
-
     }
 }
