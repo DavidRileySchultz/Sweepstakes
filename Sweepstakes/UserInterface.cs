@@ -50,9 +50,8 @@ namespace Sweepstakes
                     Console.WriteLine("You chose to use a Stack to organize your sweepstakes.");
                     return new SweepstakesStackManager();
                 default:
-                    Console.WriteLine("Invalid input, please re-enter your choice. . .");
-                    PromptForTypeOfDataStructure();
-                    break;
+                    Console.WriteLine("Invalid input, defaults to stack. . .");
+                    return new SweepstakesStackManager();
             }
         }
     }

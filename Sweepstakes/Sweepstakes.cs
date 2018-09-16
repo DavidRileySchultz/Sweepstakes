@@ -33,7 +33,7 @@ namespace Sweepstakes
             Console.WriteLine($"This contestant's e-mail address is: {contestant.emailAddress}");
             Console.WriteLine($"This contestant's registration ID is: {contestant.registrationNumber}");
         }
-        string PickWinner(Contestant contestant)
+        public string PickWinner(Contestant contestant)
         {
             int winningID = RandomNumber();
 
