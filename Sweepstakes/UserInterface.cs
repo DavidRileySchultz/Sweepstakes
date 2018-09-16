@@ -33,5 +33,27 @@ namespace Sweepstakes
             Console.WriteLine("How many Sweepstakes would you like to run:");
             return Convert.ToInt32(Console.ReadLine());
         }
+        public static int PromptForNumberOfContestants()
+        {
+            Console.WriteLine("What is the number of contests allowed in your sweepstakes:");
+            return Convert.ToInt32(Console.ReadLine());
+        }
+        public static ISweepstakesManager PromptForTypeOfDataStructure()
+        {
+            Console.WriteLine("Would you like to store your Sweepstakes as a (1)Queue or a (2)Stack:");
+            switch (Console.ReadLine())
+            {
+                case "queue":
+                    Console.WriteLine("You chose to use a Queue to organize your sweepstakes.");
+                    return new SweepstakesQueueManager();
+                case "stack":
+                    Console.WriteLine("You chose to use a Stack to organize your sweepstakes.");
+                    return new SweepstakesStackManager();
+                default:
+                    Console.WriteLine("Invalid input, please re-enter your choice. . .");
+                    PromptForTypeOfDataStructure();
+                    break;
+            }
+        }
     }
 }
