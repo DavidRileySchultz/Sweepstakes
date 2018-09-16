@@ -10,9 +10,10 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
+            
             ISweepstakesManager manager = UserInterface.PromptForTypeOfDataStructure();
             MarketingFirm marketingFirm = new MarketingFirm(manager);
-            
+            Console.ReadKey();
         }
     }
 }

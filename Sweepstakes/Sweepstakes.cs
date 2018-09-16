@@ -9,12 +9,12 @@ namespace Sweepstakes
     public class Sweepstakes
     {
         public string name;
-        int winningID;
+        public Contestant winningContestant;
         private Dictionary<int, Contestant> registeredContestants;
         Random random = new Random();
         int RandomNumber()
         {
-            int result = random.Next(1, registeredContestants.Count);
+            int result = random.Next(registeredContestants.Count + 1);
             return result;
         }
         public Sweepstakes(string name)
@@ -33,11 +33,11 @@ namespace Sweepstakes
             Console.WriteLine($"This contestant's e-mail address is: {contestant.emailAddress}");
             Console.WriteLine($"This contestant's registration ID is: {contestant.registrationNumber}");
         }
-        public string PickWinner(Contestant contestant)
+        public string PickWinner()
         {
             int winningID = RandomNumber();
-
-            return $"The winner is: {contestant.firstName} {contestant.lastName}!!!"; 
+            winningContestant = registeredContestants[winningID];
+            return $"The winner is: {registeredContestants[winningID].firstName} {registeredContestants[winningID].lastName}!!!"; 
         }        
     }
 }

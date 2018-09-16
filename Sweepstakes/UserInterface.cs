@@ -40,7 +40,7 @@ namespace Sweepstakes
         }
         public static ISweepstakesManager PromptForTypeOfDataStructure()
         {
-            Console.WriteLine("Would you like to store your Sweepstakes as a (1)Queue or a (2)Stack:");
+            Console.WriteLine("Would you like to store your Sweepstakes as a queue or a stack:");
             switch (Console.ReadLine())
             {
                 case "queue":
