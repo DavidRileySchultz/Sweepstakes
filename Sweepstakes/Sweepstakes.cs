@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class Sweepstakes : INotify
+    public class Sweepstakes 
     {
         public string name;
         private Dictionary<int, Contestant> registeredContestants;
@@ -37,9 +37,9 @@ namespace Sweepstakes
             Contestant winningContestant = registeredContestants[winningID];
             return $"The winner is: {registeredContestants[winningID].firstName} {registeredContestants[winningID].lastName}!!!"; 
         }  
-        void Notify(INotify contestant)
-        {
-            Console.WriteLine("Contestant {0} has been notified that the winner of the sweepstakes is: " + PickWinner());
-        }
+        //void Notify(INotify manager, Contestant contestant)
+        //{
+        //    Console.WriteLine("Contestant {0} has been notified that the winner of the sweepstakes is: " + PickWinner());
+        //}
     }
 }

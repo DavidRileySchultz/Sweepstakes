@@ -42,12 +42,12 @@ namespace Sweepstakes
                 Console.WriteLine(manager.GetSweepstakes().PickWinner());
             }
         }
-        private void NotifyContestants(INotify sweepstakes)
-        {
-            foreach (Contestant contestant in )
-            {
-                Console.WriteLine(sweepstakes.Notify());
-            }
-        }
+        //private void NotifyContestants(INotify)
+        //{
+        //    foreach (Contestant contestant in sweepstakes)
+        //    {
+        //        Console.WriteLine(Notify(contestant));
+        //    }
+        //}
     }    
 }
