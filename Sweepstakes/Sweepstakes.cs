@@ -18,7 +18,6 @@ namespace Sweepstakes
         }
         public Sweepstakes(string name)
         {
-            this.name = name;
             registeredContestants = new Dictionary<int, Contestant>();            
         }
         public void RegisterContestant(Contestant contestant)
