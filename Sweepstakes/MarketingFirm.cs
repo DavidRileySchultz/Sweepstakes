@@ -11,7 +11,7 @@ namespace Sweepstakes
         public int numberOfSweepstakes;
         public MarketingFirm(ISweepstakesManager manager)
         {
-            CreateYourSweepstakes(manager);
+
         }
         private void CreateYourSweepstakes(ISweepstakesManager manager)
         {
@@ -42,12 +42,12 @@ namespace Sweepstakes
                 Console.WriteLine(manager.GetSweepstakes().PickWinner());
             }
         }
-        //private void NotifyContestants()
-        //{
-        //    foreach (Contestant contestant in sweepstakes)
-        //    {
-        //        .Notify(contestant);
-        //    }
-        //}
+        private void NotifyContestants(INotify sweepstakes)
+        {
+            foreach (Contestant contestant in )
+            {
+                Console.WriteLine(sweepstakes.Notify());
+            }
+        }
     }    
 }
