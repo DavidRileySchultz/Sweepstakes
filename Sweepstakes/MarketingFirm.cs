@@ -23,6 +23,7 @@ namespace Sweepstakes
                 manager.InsertSweepstakes(sweepstakes);
             }
             PickWinners(manager);
+            NotifyContestants();
         }
         private Sweepstakes AddNewContestant(Sweepstakes sweepstakes)
         {
@@ -39,6 +40,13 @@ namespace Sweepstakes
             for (int i = 0; i < numberOfSweepstakes; i++)
             {
                 Console.WriteLine(manager.GetSweepstakes().PickWinner());
+            }
+        }
+        private void NotifyContestants()
+        {
+            foreach (Contestant contestant in sweepstakes)
+            {
+                .Notify(contestant);
             }
         }
     }    

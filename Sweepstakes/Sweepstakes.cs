@@ -13,7 +13,7 @@ namespace Sweepstakes
         Random random = new Random();
         int RandomNumber()
         {
-            int result = random.Next(1, registeredContestants.Count);
+            int result = random.Next(1, registeredContestants.Count + 1);
             return result;
         }
         public Sweepstakes(string name)
