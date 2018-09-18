@@ -39,7 +39,7 @@ namespace Sweepstakes
         }  
         //void Notify(INotify manager, Contestant contestant)
         //{
-        //    Console.WriteLine("Contestant {0} has been notified that the winner of the sweepstakes is: " + PickWinner());
+        //    Console.WriteLine("Contestant {0} has been notified that the winner of the sweepstakes is: " + winningContestant);
         //}
     }
 }
